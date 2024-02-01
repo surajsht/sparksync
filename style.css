@@ -14,6 +14,8 @@
   --font-size-big: 4.6rem;
   --font-size-medium: 3.2rem;
   --font-size-small: 2.4rem;
+  --box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  --section-spacing: 16rem;
 }
 
 @media (max-width: 1400px) {
@@ -28,6 +30,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  :root {
+    --section-spacing: 8rem;
+  }
+}
+
 @media (max-width: 991px) {
   :root {
     --font-size-large: 5.2rem;
@@ -38,12 +46,14 @@
   :root {
     --font-size-large: 4.6rem;
     --font-size-big: 3.6rem;
+    --section-spacing: 6rem;
   }
 }
 
 @media (max-width: 575px) {
   :root {
     --font-size-large: 4rem;
+    --font-size-medium: 2.8rem;
   }
 }
 
@@ -134,19 +144,7 @@ body {
 }
 
 .section-spacing {
-  margin-bottom: 16rem;
-}
-
-@media (max-width: 1024px) {
-  .section-spacing {
-    margin-bottom: 8rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .section-spacing {
-    margin-bottom: 6rem;
-  }
+  margin-bottom: var(--section-spacing);
 }
 
 .section-header {
@@ -324,6 +322,69 @@ body {
   }
 }
 
+.partnered-companies {
+  --local-section-spacing: 8rem;
+
+  position: relative;
+  top: calc(var(--local-section-spacing) * -1);
+  margin-bottom: calc(var(--section-spacing) - var(--local-section-spacing));
+}
+
+@media (max-width: 767px) {
+  .partnered-companies {
+    --local-section-spacing: 6rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .partnered-companies {
+    --local-section-spacing: 4rem;
+  }
+}
+
+.partnered-companies-content {
+  text-align: center;
+  padding: 4rem;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 767px) {
+  .partnered-companies-content {
+    padding: 2.4rem;
+  }
+}
+
+.partnered-companies-content .header-title {
+  margin-bottom: 4.8rem;
+}
+
+@media (max-width: 575px) {
+  .partnered-companies-content .header-title {
+    margin-bottom: 2.4rem;
+  }
+}
+
+.partnered-companies-detail {
+  padding-bottom: 4rem;
+}
+
+.partnered-companies-detail .swiper-pagination {
+  bottom: 0;
+}
+
+.partnered-companies-detail
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background: var(--primary-color);
+}
+
+.partnered-companies-detail img {
+  height: 4.8rem;
+  width: 100%;
+  object-fit: contain;
+}
+
 .our-services p {
   line-height: 1.5;
 }
@@ -376,7 +437,7 @@ body {
   align-items: flex-start;
   justify-content: center;
   padding: 2.4rem;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow);
   transition: 0.45s;
 }
 
@@ -384,7 +445,6 @@ body {
 .service-item:focus {
   color: #fff;
   background-color: var(--primary-color);
-  box-shadow: 0 6px 10px 0 rgba(255, 73, 4, 0.3);
 }
 
 .service-item .fa-solid {
