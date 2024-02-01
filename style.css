@@ -69,6 +69,12 @@ body {
   line-height: 1.2;
 }
 
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
 .container {
   max-width: 126rem;
   margin: 0 auto;
@@ -198,9 +204,6 @@ body {
 
 .nav-buttons button {
   background-color: transparent;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
   font-size: 1.4rem;
   line-height: 1.2;
 }
@@ -444,7 +447,7 @@ body {
 .service-item:hover,
 .service-item:focus {
   color: #fff;
-  background-color: var(--primary-color);
+  background-color: var(--primary-hover-color);
 }
 
 .service-item .fa-solid {
@@ -515,7 +518,7 @@ body {
 .about-us-sub-item:hover,
 .about-us-sub-item:focus {
   color: #fff;
-  background-color: var(--primary-color);
+  background-color: var(--primary-hover-color);
 }
 
 .about-us-sub-item .fa-solid {
@@ -589,4 +592,33 @@ body {
   .about-us-content .about-us-item:nth-child(3) img {
     height: 32rem;
   }
+}
+
+.our-projects .section-header,
+.our-projects .section-header .section-header-item:last-child,
+.carousel-btn {
+  display: flex;
+  align-items: center;
+}
+
+.our-projects .section-header {
+  justify-content: space-between;
+}
+
+.our-projects .section-header .section-header-item:last-child {
+  gap: 2.4rem;
+}
+
+.carousel-btn {
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: rgb(245, 245, 245);
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus {
+  color: #fff;
+  background-color: var(--primary-hover-color);
 }
