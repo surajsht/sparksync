@@ -41,3 +41,33 @@ var swiper = new Swiper(".partnered-companies-detail", {
     clickable: true,
   },
 });
+
+var swiper = new Swiper(".our-projects-content", {
+  loop: true,
+  speed: 1000,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1025: {
+      slidesPerView: 3,
+    },
+    1600: {
+      slidesPerView: 4,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".carousel-btn-next",
+    prevEl: ".carousel-btn-prev",
+  },
+});
