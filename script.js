@@ -67,7 +67,34 @@ var swiper = new Swiper(".our-projects-content", {
     type: "progressbar",
   },
   navigation: {
-    nextEl: ".carousel-btn-next",
-    prevEl: ".carousel-btn-prev",
+    nextEl: ".our-projects-btn-next",
+    prevEl: ".our-projects-btn-prev",
+  },
+});
+
+var swiper = new Swiper(".testimonial-content", {
+  spaceBetween: 32,
+  loop: true,
+  speed: 1000,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 5150,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".testimonial-btn-next",
+    prevEl: ".testimonial-btn-prev",
   },
 });

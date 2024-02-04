@@ -14,6 +14,7 @@
   --font-size-big: 4.6rem;
   --font-size-medium: 3.2rem;
   --font-size-small: 2.4rem;
+  --font-size-xsmall: 1.8rem;
   --box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
   --section-spacing: 16rem;
 }
@@ -63,6 +64,7 @@ html {
 
 body {
   color: var(--text-color);
+  background-color: #f2f2f2;
   font-family: var(--secondary-font-family);
   font-size: 1.6rem;
   font-weight: 400;
@@ -73,6 +75,10 @@ button {
   border: 0;
   outline: 0;
   cursor: pointer;
+}
+
+p {
+  line-height: 1.5;
 }
 
 /* common css starts */
@@ -126,6 +132,10 @@ button {
 
 .font-size-small {
   font-size: var(--font-size-small);
+}
+
+.font-size-xsmall {
+  font-size: var(--font-size-xsmall);
 }
 
 .primary-btn {
@@ -234,9 +244,17 @@ button {
   }
 }
 
+.bg-hover-effect {
+  background-color: #fff;
+}
+
 .bg-hover-effect,
 .bg-hover-effect .fa-solid {
   transition: 0.45s;
+}
+
+.bg-hover-effect .fa-solid {
+  color: var(--primary-color);
 }
 
 .bg-hover-effect:hover,
@@ -247,6 +265,25 @@ button {
 
 .bg-hover-effect:hover .fa-solid,
 .bg-hover-effect:focus .fa-solid {
+  color: #fff;
+}
+
+.section-header-with-carousel,
+.section-header-with-carousel .section-header-item:last-child,
+.carousel-btn {
+  display: flex;
+  align-items: center;
+}
+
+.section-header-with-carousel {
+  justify-content: space-between;
+}
+
+.section-header-with-carousel .section-header-item:last-child {
+  gap: 2.4rem;
+}
+
+.section-header-with-carousel .header-title {
   color: #fff;
 }
 
@@ -372,7 +409,6 @@ button {
 
 .hero-description {
   font-size: 1.8rem;
-  line-height: 1.5;
   margin-bottom: 4rem;
 }
 
@@ -423,10 +459,6 @@ button {
   height: 4.8rem;
   width: 100%;
   object-fit: contain;
-}
-
-.our-services p {
-  line-height: 1.5;
 }
 
 .our-services .section-header {
@@ -483,7 +515,6 @@ button {
 .service-item .fa-solid {
   font-size: 4.8rem;
   margin-bottom: 1.6rem;
-  color: var(--primary-color);
 }
 
 .service-item-title {
@@ -508,14 +539,10 @@ button {
   }
 }
 
-.about-us p {
-  line-height: 1.5;
-}
-
 .about-us-sub-item {
   display: flex;
   gap: 2.4rem;
-  background-color: #f5f5f5;
+  background-color: #fff;
   padding: 2.4rem;
   margin-bottom: 2.4rem;
   transition: 0.45s;
@@ -529,12 +556,6 @@ button {
 
 .about-us-sub-item:last-child {
   margin-bottom: 0;
-}
-
-.about-us-sub-item:hover,
-.about-us-sub-item:focus {
-  color: #fff;
-  background-color: var(--primary-hover-color);
 }
 
 .about-us-sub-item .fa-solid {
@@ -610,21 +631,6 @@ button {
   }
 }
 
-.our-projects .section-header,
-.our-projects .section-header .section-header-item:last-child,
-.carousel-btn {
-  display: flex;
-  align-items: center;
-}
-
-.our-projects .section-header {
-  justify-content: space-between;
-}
-
-.our-projects .section-header .section-header-item:last-child {
-  gap: 2.4rem;
-}
-
 .carousel-btn {
   justify-content: center;
   height: 4rem;
@@ -648,10 +654,6 @@ button {
   .our-projects {
     padding: 8rem 0;
   }
-}
-
-.our-projects .header-title {
-  color: #fff;
 }
 
 .our-project-item {
@@ -802,7 +804,6 @@ button {
 
 .statistics-count .fa-solid {
   font-size: 3.2rem;
-  color: var(--primary-color);
 }
 
 .statistics-count-title {
@@ -812,4 +813,63 @@ button {
 .statistics-count-number {
   font-size: 2.4rem;
   font-weight: 600;
+}
+
+.sparksync-testimonial {
+  position: relative;
+  padding-top: 6rem;
+}
+
+.sparksync-testimonial::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  width: 100%;
+  background-color: #3a3a4f;
+}
+
+.testimonial-item {
+  background-color: #fff;
+  padding: 1.6rem;
+}
+
+.testimonial-item-top,
+.testimonial-top-content {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-item-top {
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.testimonial-top-content:first-child {
+  gap: 1.6rem;
+}
+
+.testimonial-top-content:last-child {
+  gap: 0.4rem;
+}
+
+.testimonial-top-content .fa-solid {
+  color: #ffa41c;
+}
+
+.testimonial-user-name {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.top-content-image {
+  height: 8rem;
+  width: 8rem;
+}
+
+.top-content-image img {
+  border-radius: 50%;
 }
