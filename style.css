@@ -132,7 +132,6 @@ p {
 
 .font-size-small {
   font-size: var(--font-size-small);
-  line-height: 1.4;
   font-weight: 500;
 }
 
@@ -1032,4 +1031,14 @@ p {
 .work-steps-popup .fa-solid:hover,
 .work-steps-popup .fa-solid:focus {
   color: var(--primary-hover-color);
+}
+
+.our-blog-image {
+  height: 32rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.our-blog-title {
+  margin: 1.6rem 0;
 }
