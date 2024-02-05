@@ -98,3 +98,19 @@ var swiper = new Swiper(".testimonial-content", {
     prevEl: ".testimonial-btn-prev",
   },
 });
+
+// word steps popup
+
+let mainContainer = document.querySelector(".work-steps .section-body-bottom");
+let workStepPopup = document.querySelector(".work-steps-popup");
+let workStepPopupClose = workStepPopup.querySelector(".fa-solid");
+
+mainContainer.addEventListener("click", () => {
+  workStepPopup.classList.add("active");
+  document.body.style.overflow = "hidden";
+});
+
+workStepPopupClose.addEventListener("click", () => {
+  workStepPopup.classList.remove("active");
+  document.body.style.overflow = "visible";
+});
