@@ -1076,6 +1076,36 @@ p {
   object-fit: cover;
 }
 
+@media (max-width: 1199px) {
+  .our-team-item img {
+    height: 48rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .our-team-item img {
+    height: 44rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .our-team-item img {
+    height: 44rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-team-item img {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .our-team-item img {
+    height: 36rem;
+  }
+}
+
 .our-team-detail {
   position: absolute;
   left: 0;
