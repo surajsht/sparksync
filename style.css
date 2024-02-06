@@ -851,7 +851,7 @@ p {
 .testimonial-item-top {
   justify-content: space-between;
   gap: 1.2rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .testimonial-top-content:first-child {
@@ -1097,12 +1097,6 @@ p {
 @media (max-width: 767px) {
   .our-team-item img {
     height: 40rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .our-team-item img {
-    height: 36rem;
   }
 }
 
