@@ -99,6 +99,32 @@ var swiper = new Swiper(".testimonial-content", {
   },
 });
 
+var swiper = new Swiper(".our-team-carousel", {
+  effect: "coverflow",
+  centeredSlides: true,
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 5150,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 // word steps popup
 
 let mainContainer = document.querySelector(".work-steps .section-body-bottom");
