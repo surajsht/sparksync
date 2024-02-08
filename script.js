@@ -1,3 +1,19 @@
+// switch website theme
+
+let themeSwitcher = document.querySelector(".theme-switcher");
+
+themeSwitcher.addEventListener("click", () => {
+  let darkModeCss = document.querySelector("#darkmode-css");
+
+  document.body.classList.toggle("darkmode");
+
+  if (document.body.classList.contains("darkmode")) {
+    darkModeCss.disabled = false;
+  } else {
+    darkModeCss.disabled = true;
+  }
+});
+
 const btnSearch = document.querySelector(".btn-search");
 
 if (btnSearch) {

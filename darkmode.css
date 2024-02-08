@@ -1,0 +1,8 @@
+:root {
+  --text-color: #fff;
+  --item-bg-color: #272727;
+}
+
+body {
+  background-color: rgb(16, 20, 24);
+}
