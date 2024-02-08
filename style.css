@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -396,7 +397,7 @@ p {
 
 .nav-buttons button {
   background-color: transparent;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.2;
 }
 
