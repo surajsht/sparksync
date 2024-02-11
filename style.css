@@ -14,7 +14,8 @@
   --bg-color-light: #f3f3f3;
   --item-bg-color: #fff;
   --text-color: #272727;
-  --font-size-large: 7.2rem;
+  --font-size-xlarge: 7.2rem;
+  --font-size-large: 6rem;
   --font-size-big: 4.6rem;
   --font-size-medium: 3.2rem;
   --font-size-small: 2.4rem;
@@ -25,12 +26,13 @@
 
 @media (max-width: 1400px) {
   :root {
-    --font-size-large: 6.4rem;
+    --font-size-xlarge: 6.4rem;
   }
 }
 
 @media (max-width: 1999px) {
   :root {
+    --font-size-large: 5.2rem;
     --font-size-big: 4rem;
   }
 }
@@ -43,13 +45,13 @@
 
 @media (max-width: 991px) {
   :root {
-    --font-size-large: 5.2rem;
+    --font-size-xlarge: 5.2rem;
   }
 }
 
 @media (max-width: 767px) {
   :root {
-    --font-size-large: 4.6rem;
+    --font-size-xlarge: 4.6rem;
     --font-size-big: 3.6rem;
     --section-spacing: 6rem;
   }
@@ -85,6 +87,12 @@ p {
   line-height: 1.5;
 }
 
+a:hover,
+a:focus {
+  color: var(--primary-hover-color);
+  text-decoration: none;
+}
+
 /* common css starts */
 
 .container {
@@ -117,6 +125,10 @@ p {
   .container {
     max-width: 100%;
   }
+}
+
+.font-size-xlarge {
+  font-size: var(--font-size-xlarge);
 }
 
 .font-size-large {
@@ -160,6 +172,7 @@ p {
 
 .primary-btn:hover,
 .primary-btn:focus {
+  color: #fff;
   background-color: var(--primary-hover-color);
 }
 
@@ -357,6 +370,20 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 3.2rem 0;
+  margin-bottom: 6.4rem;
+}
+
+@media (max-width: 991px) {
+  .navbar-content {
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar-content {
+    margin-bottom: 0;
+  }
 }
 
 .logo-title {
@@ -395,7 +422,13 @@ p {
   list-style: none;
 }
 
+.nav-lists li a:not(:hover, :focus) {
+  color: inherit;
+  text-decoration: none;
+}
+
 .nav-buttons button {
+  color: var(--text-color);
   background-color: transparent;
   font-size: 2rem;
   line-height: 1.2;
@@ -477,6 +510,11 @@ p {
   right: 0;
   color: #fff;
   z-index: 10;
+}
+
+.home .navbar-content {
+  padding: 0;
+  margin: 0;
 }
 
 .home .navbar .fa-solid {
@@ -1355,4 +1393,68 @@ p {
   padding: 2.4rem 0;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+}
+
+.page-about-us-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+@media (max-width: 991px) {
+  .page-about-us-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.page-about-us-item > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page-about-us-top {
+  margin-bottom: 6.4rem;
+}
+
+.page-about-us-description {
+  margin: 2.4rem 0;
+}
+
+.page-about-us-bottom {
+  padding-left: 3.2rem;
+  border-left: 2.4rem solid #e9d4cc;
+}
+
+.image-stack-component {
+  position: relative;
+  margin-top: 2.4rem;
+}
+
+.image-stack-component .image-stack-item:first-child,
+.image-stack-component span {
+  display: flex;
+  align-items: center;
+}
+
+.image-stack-component .image-stack-item:first-child > * {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.image-stack-component img {
+  object-fit: cover;
+}
+
+.image-stack-component .image-stack-item:first-child > *:not(:first-child) {
+  margin-left: -2.8rem;
+}
+
+.image-stack-component span {
+  justify-content: center;
+  color: #fff;
+  background-color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 500;
 }
