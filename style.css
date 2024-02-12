@@ -1173,6 +1173,30 @@ a:focus {
   z-index: 10;
 }
 
+@media (max-width: 1199px) {
+  .our-team-item {
+    height: 48rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .our-team-item {
+    height: 44rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .our-team-item {
+    height: 44rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-team-item {
+    height: 40rem;
+  }
+}
+
 .our-team-item::before {
   position: absolute;
   content: "";
@@ -1194,30 +1218,6 @@ a:focus {
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
-
-@media (max-width: 1199px) {
-  .our-team-item img {
-    height: 48rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .our-team-item img {
-    height: 44rem;
-  }
-}
-
-@media (max-width: 991px) {
-  .our-team-item img {
-    height: 44rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .our-team-item img {
-    height: 40rem;
-  }
 }
 
 .our-team-detail {
