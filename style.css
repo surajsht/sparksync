@@ -620,12 +620,14 @@ a:focus {
   }
 }
 
-.partnered-companies-content .header-title {
+.partnered-companies-content .header-title,
+.page-partnered-companies-content .header-title {
   margin-bottom: 4.8rem;
 }
 
 @media (max-width: 575px) {
-  .partnered-companies-content .header-title {
+  .partnered-companies-content .header-title,
+  .page-partnered-companies-content .header-title {
     margin-bottom: 2.4rem;
   }
 }
@@ -1162,11 +1164,12 @@ a:focus {
 }
 
 .our-blog-title {
-  margin: 1.6rem 0;
+  margin: 0.8rem 0;
 }
 
 .our-team-item {
   position: relative;
+  height: 52rem;
   z-index: 10;
 }
 
@@ -1188,7 +1191,7 @@ a:focus {
 }
 
 .our-team-item img {
-  height: 52rem;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -1274,6 +1277,10 @@ a:focus {
   }
 }
 
+.page-cta-content {
+  padding: 6rem 0;
+}
+
 .cta-detail {
   position: relative;
   color: #fff;
@@ -1316,13 +1323,7 @@ a:focus {
 .site-footer {
   color: #fff;
   background-color: var(--bg-color-dark);
-  padding: 9.2rem 0;
-}
-
-@media (max-width: 991px) {
-  .site-footer {
-    padding: 4rem 0;
-  }
+  padding: 4rem 0;
 }
 
 .site-footer a {
