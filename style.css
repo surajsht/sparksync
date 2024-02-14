@@ -800,7 +800,7 @@ a:focus {
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
-  background-color: rgb(245, 245, 245);
+  background-color: #d9d9d9;
 }
 
 .carousel-btn:hover,
@@ -883,7 +883,7 @@ a:focus {
 }
 
 .our-projects-content .swiper-pagination-progressbar {
-  background-color: #fff;
+  background-color: #d9d9d9;
 }
 
 @media (min-width: 768px) {
@@ -1316,7 +1316,7 @@ a:focus {
 }
 
 .page-cta-content {
-  padding: 6rem 0;
+  padding: 16rem 0;
 }
 
 .cta-detail {
@@ -1496,4 +1496,12 @@ a:focus {
   background-color: var(--primary-color);
   font-size: 2rem;
   font-weight: 500;
+}
+
+.portfolio .our-projects {
+  background-color: transparent;
+}
+
+.portfolio .header-title {
+  color: #000;
 }
