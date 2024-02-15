@@ -1505,3 +1505,56 @@ a:focus {
 .portfolio .header-title {
   color: #000;
 }
+
+.blog-content {
+  display: flex;
+  gap: 4rem;
+}
+
+.sparksync-article:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.sparksync-article img {
+  height: 52rem;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1.6rem;
+}
+
+.meta-container {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.meta-container span {
+  font-size: 1.4rem;
+}
+
+.meta-container .fa-solid {
+  margin-right: 0.4rem;
+}
+
+.article-title,
+.article-description {
+  margin-bottom: 1.2rem;
+}
+
+.article-read-more {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  color: var(--primary-hover-color);
+}
+
+.article-read-more .fa-solid {
+  margin-left: 0.8rem;
+  transform: rotate(45deg);
+}
